@@ -20,6 +20,9 @@ jobs:
             git submodule sync
             git submodule update --init
       - run:
+          name: "pwd"
+          command: pwd
+      - run:
           name: "Run Hugo"
           command: hugo -t blackburn -v
       - run:
