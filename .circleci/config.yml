@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Run Hugo"
-          command: hugo -t slim
+          command: hugo -t ananke
       - deploy:
           branch: master
           command: firebase deploy --token "$FIREBASE_TOKEN"

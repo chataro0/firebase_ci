@@ -1,0 +1,4 @@
+baseURL = "https://chataro-app.firebaseapp.com/"
+languageCode = "ja-JP"
+title = "Chataro Blog"
+theme = "ananke"
