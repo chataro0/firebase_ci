@@ -1,5 +1,5 @@
 baseURL = "https://chataro-app.firebaseapp.com/"
-languageCode = "ja"
+languageCode = "en"
 title = "Chataro Blog"
 theme = "blackburn"
 paginate = 10
