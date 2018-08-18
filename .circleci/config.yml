@@ -21,7 +21,7 @@ jobs:
             git submodule update --init
       - run:
           name: "Run Hugo"
-          command: hugo -t blackburn
+          command: hugo -t blackburn -v
       - run:
           name: "check artifact"
           command: ls -lR
