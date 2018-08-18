@@ -15,6 +15,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "sync theme submodule"
+          command: |
+            git submodule sync
+            git submodule update --init
+      - run:
           name: "Run Hugo"
           command: hugo -t ananke
       - run:
