@@ -24,7 +24,7 @@ jobs:
           command: hugo -t blackburn -v
       - run:
           name: "check artifact"
-          command: ls -lR
+          command: ls -lRa
       - deploy:
           branch: master
           command: firebase deploy --token "$FIREBASE_TOKEN"
