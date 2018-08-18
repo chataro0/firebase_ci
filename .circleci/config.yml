@@ -21,10 +21,10 @@ jobs:
             git submodule update --init
       - run:
           name: "Run Hugo"
-          command: hugo -t ananke
+          command: hugo -t blackburn
       - run:
           name: "check artifact"
-          command: tree
+          command: ls -lR
       - deploy:
           branch: master
           command: firebase deploy --token "$FIREBASE_TOKEN"
