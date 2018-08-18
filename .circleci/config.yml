@@ -17,6 +17,9 @@ jobs:
       - run:
           name: "Run Hugo"
           command: hugo -t ananke
+      - run:
+          name: "check files"
+          command: ls -R
       - deploy:
           branch: master
           command: firebase deploy --token "$FIREBASE_TOKEN"
