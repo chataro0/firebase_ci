@@ -4,8 +4,8 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-    #   - image: jnyo/docker-hugo-firebase:latest
-      - image: inductor/hugo-firebase-tools:latest
+      - image: jnyo/docker-hugo-firebase:latest
+    #   - image: inductor/hugo-firebase-tools:latest
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -21,8 +21,8 @@ jobs:
             git submodule sync
             git submodule update --init
       - run:
-          name: "pwd"
-          command: pwd
+          name: "check Hugo version"
+          command: hugo version
       - run:
           name: "Run Hugo"
           command: hugo -t blackburn -v
