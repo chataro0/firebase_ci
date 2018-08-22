@@ -4,7 +4,8 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: jnyo/docker-hugo-firebase:latest
+    #   - image: jnyo/docker-hugo-firebase:latest
+      - image: inductor/hugo-firebase-tools:latest
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
