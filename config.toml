@@ -2,7 +2,7 @@ baseURL = "https://chataro-app.firebaseapp.com/"
 languageCode = "en"
 title = "Chataro Blog"
 theme = "blackburn"
-paginate = 12
+paginate = 10
 
 [indexes]
   tag = "tags"
